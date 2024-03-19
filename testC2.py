@@ -9,13 +9,12 @@ def tinh_gia_cuoc_grab(km):
     elif km<=0:
         gia_cuoc = 0
     else:
-        gia_cuoc = 20000 + 11 * 15500 + 13 * 14500 + (km - 25) * 12500
-    
+        gia_cuoc = 20000 + 11 * 15500 + 13 * 14500 + (km - 25) * 12500  
     return gia_cuoc
 
-class TestTinhGiaCuocGrab(unittest.TestCase):
+    
     # Kiem thu C2
-
+class TestTinhGiaCuocGrab(unittest.TestCase):
     def test_km_duoi_1(self):
         gia_cuoc = tinh_gia_cuoc_grab(0.7)
         self.assertEqual(gia_cuoc, 14000)
