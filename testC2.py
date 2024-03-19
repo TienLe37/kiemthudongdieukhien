@@ -15,6 +15,7 @@ def tinh_gia_cuoc_grab(km):
 
 class TestTinhGiaCuocGrab(unittest.TestCase):
     # Kiem thu C2
+
     def test_km_duoi_1(self):
         gia_cuoc = tinh_gia_cuoc_grab(0.7)
         self.assertEqual(gia_cuoc, 14000)
@@ -34,6 +35,7 @@ class TestTinhGiaCuocGrab(unittest.TestCase):
     def test_km_0(self):
         gia_cuoc = tinh_gia_cuoc_grab(0)
         self.assertEqual(gia_cuoc, 0)
+        
 
 if __name__ == '__main__':
     unittest.main()
